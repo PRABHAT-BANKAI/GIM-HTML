@@ -1,0 +1,58 @@
+<!-- Box Model
+width, height, background-color, content, padding, box-sizing, margin, border, border-radius
+Ex : Create Box Design (Padding, Margin, Content, Border)  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- external -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- internal -->
+    <style>
+      .box {
+        background-color: aqua;
+        width: 200px;
+        height: 200px;
+        /* padding-left: 50px;
+        padding-top: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px; */
+        /* padding: 50px;  for all purpose*/
+        /* padding: 50px 100px; top-bottom ,, left-right */
+        /* padding: 50px 100px 150px 200px;   top right bottom left */
+        /* box-sizing: border-box; */
+        box-sizing: content-box;
+        padding: 300px;
+        /* border: 50px;
+        border-style: solid;
+        border-color: red; */
+        border: 25px solid crimson;
+        /* border-radius: 50%; */
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50%;
+      }
+      button {
+        height: 90px;
+        width: 140px;
+        margin: 50px;
+        font-size: 25px;
+        background-color: aqua;
+        border: none;
+        /* border-radius: 25px 50px; top-bottom ,, left-right */
+        border-radius: 25px 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="box">box1</div>
+    </div>
+
+    <button>button</button>
+  </body>
+</html>
