@@ -1,0 +1,103 @@
+<!-- Background
+Image, size, repeat, position, attachment, blend-mode
+Types Of Gradient : Linear, Radial, Conic
+
+Ex : Create Parallax Scrolling Effect -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- internal css -->
+    <style>
+      /* universal selector */
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 47px;
+      }
+      p {
+        color: blue;
+      }
+
+      .text {
+        background-color: chartreuse;
+      }
+
+      #id-text {
+        background-color: red;
+      }
+      .box1 {
+        background-image: url(./image.jpeg);
+        height: 300px;
+        width: 400px;
+      }
+      .box2 {
+        background-image: url(./image.jpeg);
+        height: 200px;
+        width: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: contain;
+      }
+      .box3 {
+        background-image: url(./image.jpeg);
+        height: 400px;
+        width: 800px;
+        border: 1px solid black;
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+      .box4 {
+        background-image: url(./image.jpeg);
+        height: 400px;
+        width: 800px;
+        background-repeat: round;
+      }
+      .box5 {
+        background-image: url(./image.jpeg);
+        height: 1200px;
+        width: 400px;
+        border: 1px solid black;
+        /* scroll by default, fixed ,local */
+        background-attachment: local;
+        background-color: aqua;
+        background-blend-mode: luminosity;
+      }
+      .gradient {
+        height: 400px;
+        width: 400px;
+        border: 1px solid green;
+        background: linear-gradient(to bottom, blue, red, black);
+        background: radial-gradient(circle, blue, red);
+        background: conic-gradient(red, yellow, blue);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(205, 123, 96, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+      }
+      body {
+        /* background-color: green;
+        background-image: url(./image.jpeg); */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS (cascading styleSheet)</h1>
+    <!-- inline css -->
+    <!-- <p style="color: yellow">heading 1</p> first priority inline css -->
+    <p class="text">heading 1</p>
+    <p id="id-text">heading 2</p>
+    <div class="box1">background image</div>
+    <div class="box2">background size</div>
+    <div class="box3">background postion</div>
+    <div class="box4">background repeat</div>
+    <div class="box5">background attachment</div>
+    <div class="gradient"></div>
+  </body>
+</html>
