@@ -1,0 +1,141 @@
+<!-- Position
+relative, absolute, static, sticky, fixed, z-index, overflow
+Ex : All Property Practice & Create Login Form With Using Position -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        height: 1400px;
+        width: 400px;
+        background-color: yellow;
+        position: relative;
+      }
+
+      .box1 {
+        height: 100px;
+        width: 100px;
+        background-color: crimson;
+        position: sticky;
+        top: 15px;
+      }
+
+      .fix {
+        position: fixed;
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        right: 25px;
+        bottom: 25px;
+      }
+
+      .overflow-container {
+        height: 300px;
+        width: 400px;
+        background-color: chocolate;
+        overflow: scroll;
+        overflow: hidden;
+        overflow-y: scroll;
+        /* overflow: auto; */
+      }
+      /* index container  */
+      .index-container {
+        height: 900px;
+        width: 900px;
+        background-color: rgb(22, 216, 77);
+        position: relative;
+        z-index: -20;
+      }
+      /* index box  where we give postion absolute*/
+      .index1 {
+        width: 500px;
+        height: 500px;
+        background-color: blue;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        /* z-index  */
+        z-index: 3;
+      }
+
+      .index2 {
+        width: 400px;
+        height: 400px;
+        background-color: rgb(0, 255, 234);
+        position: absolute;
+        top: 55px;
+        right: 200px;
+        z-index: -1;
+     
+      }
+
+      .index3 {
+        width: 300px;
+        height: 300px;
+        background-color: rgb(255, 0, 0);
+        position: absolute;
+        right: 350px;
+        bottom: 500px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <!-- sticky on top -->
+        <div class="box1">sticky Position</div>
+        <!-- fixed on screen -->
+        <div class="fix">fixed Position (chatbox)</div>
+      </div>
+    </div>
+    <div class="overflow-container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque et illo
+        impedit. Ad debitis ipsam, temporibus, quasi aperiam suscipit impedit
+        quidem similique excepturi ipsa, atque recusandae distinctio accusantium
+        necessitatibus tenetur!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque et illo
+        impedit. Ad debitis ipsam, temporibus, quasi aperiam suscipit impedit
+        quidem similique excepturi ipsa, atque recusandae distinctio accusantium
+        necessitatibus tenetur!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque et illo
+        impedit. Ad debitis ipsam, temporibus, quasi aperiam suscipit impedit
+        quidem similique excepturi ipsa, atque recusandae distinctio accusantium
+        necessitatibus tenetur!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque et illo
+        impedit. Ad debitis ipsam, temporibus, quasi aperiam suscipit impedit
+        quidem similique excepturi ipsa, atque recusandae distinctio accusantium
+        necessitatibus tenetur!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque et illo
+        impedit. Ad debitis ipsam, temporibus, quasi aperiam suscipit impedit
+        quidem similique excepturi ipsa, atque recusandae distinctio accusantium
+        necessitatibus tenetur!
+      </p>
+    </div>
+
+    <div class="index-container">
+      <div class="index1">index1</div>
+      <div class="index2">index2</div>
+      <div class="index3">index3</div>
+    </div>
+  </body>
+</html>
