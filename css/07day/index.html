@@ -1,0 +1,54 @@
+<!-- Transform, Hover & Transition
+Transform Property : translate, rotate, scale, skew
+Hover - :hover
+Transition Property : duration, timing-function, delay, property
+Ex : Create Button & Icon Hover Effect  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        /* transform: translate(-45px ,155px); */
+        /* transform: rotate(131deg); */
+        /* transform: scale(1.2); zoom in zoom out */
+        /* transform:skewX(175deg); */
+        /* transform: skewY(120deg); */
+        /* transform: skew(130deg); */
+        /* transition: 4s; */
+        transition-duration: 10s;
+        transition-timing-function: ease-in;
+        transition-timing-function: ease-out;
+        transition-timing-function: ease-in-out;
+        transition-delay: 2s;
+      }
+
+      .box1:hover {
+        background-color: blue;
+        /* transform: scale(0.5); */
+        margin-left: 255px;
+        transform: skew(1200deg, 360deg);
+      }
+      .box1::before {
+        content: "magic ";
+      }
+      .box1::after {
+        content: " box2";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">box1</div>
+  </body>
+</html>
